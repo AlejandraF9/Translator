@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-ExtraLight.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-ExtraLight.ttf") format ("truetype");
+  font-style: normal;
+}

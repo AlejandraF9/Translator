@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#app {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.main-container {
+    height: 694px;
+    margin: 0rem 10rem;
+    background-color: #fff;
+    padding-top: 1px;
+}
+
+.title {
+    display: flex;
+    gap: 4px;
+    padding-left: 25px;
+}
+
+.google {
+    font-family: "Poppins";
+    font-size: 20px;
+}
+
+.first-character {
+    color: #4285f4;
+}
+
+.second-character {
+    color: #ea5043;
+}
+
+.third-character {
+    color: #fbbc13;
+}
+
+.fourth-character {
+    color: #4285f4;
+}
+
+.fifth-character {
+    color: #3da853;
+}
+
+.sixth-character {
+    color: #ea5043;
+}
+
+.traductor {
+    color: #6a6c71;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.first-border {
+    border-bottom: 1px solid #dadce0;
+    margin-bottom: 25px; 
+}
+
+/* Para todo:
+padding-left: 25px; */
