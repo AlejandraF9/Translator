@@ -10,15 +10,16 @@ html, body {
 
 .main-container {
     height: 694px;
-    margin: 0rem 10rem;
+    margin: 0rem 10.5rem;
     background-color: #fff;
     padding-top: 1px;
 }
 
 .title {
     display: flex;
-    gap: 4px;
-    padding-left: 25px;
+    gap: 1px;
+    margin: 1rem;
+    padding-left: 0.5rem;
 }
 
 .google {
@@ -28,6 +29,7 @@ html, body {
 
 .first-character {
     color: #4285f4;
+    font-size: 22px;
 }
 
 .second-character {
@@ -55,12 +57,85 @@ html, body {
     font-family: "Roboto";
     font-weight: 400;
     font-size: 22px;
+    margin: 0.2rem;
 }
 
 .first-border {
-    border-bottom: 1px solid #dadce0;
-    margin-bottom: 25px; 
+    border-bottom: 1px solid #e8eaed;
+    margin-bottom: 1.5rem;
 }
 
-/* Para todo:
-padding-left: 25px; */
+.language-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.original-language, .translated-language {
+    width: 200px;
+    color: #3d4144;
+    font-size: 15px;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border-color: #dadce0;
+}
+
+.original-language:focus, .translated-language:focus {
+    outline: none;
+    border: 3px solid #4285f4;
+}
+
+.arrows {
+    color: #5f6368;
+    margin-right: 1rem;
+    transform: rotate(90deg);
+}
+
+.second-border {
+    border-bottom: 1px solid #e8eaed;
+    margin-top: 1.5rem;
+}
+
+.main-div {
+    display: flex;
+    margin-top: 2rem;
+    gap: 26rem;
+    height: 30%;
+    font-family: "Roboto";
+    color: #5f6368;
+    font-size: 18px;
+}
+
+.first-div {
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+    justify-content: space-between;
+    padding-left: 25px;
+}
+
+.textarea {
+    width: 200%;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.textarea::placeholder {
+    font-family: "Roboto";
+    color: #5f6368;
+    font-size: 18px;
+}
+
+.second-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    background-color: #f8f9fa;
+}
+
+.third-div {
+    display: flex;
+    gap: 28rem;
+}

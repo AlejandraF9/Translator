@@ -32,7 +32,9 @@ addOptions(originalLanguage, [
 ]);
 
 const arrows = document.createElement("div");
-arrows.innerHTML = `<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mobiledata"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 12v-8" /><path d="M8 20v-8" /><path d="M13 7l3 -3l3 3" /><path d="M5 17l3 3l3 -3" /></svg>`
+arrows.innerHTML = `<svg  xmlns="http://www.w3.org/2000/svg"  width="28"  height="28"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mobiledata"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 12v-8" /><path d="M8 20v-8" /><path d="M13 7l3 -3l3 3" /><path d="M5 17l3 3l3 -3" /></svg>`;
+
+arrows.setAttribute("class", "arrows");
 
 const translatedLanguage = document.createElement("select");
 translatedLanguage.textContent = "Inglés";
@@ -42,6 +44,9 @@ addOptions(translatedLanguage, [
   "Inglés", "Español", "Francés", "Alemán",
   "Italiano", "Portugués", "Ruso", "Japonés", "Chino"
 ]);
+
+const secondBorder = document.createElement("div");
+secondBorder.setAttribute("class", "second-border");
 
 const mainDiv = document.createElement("div");
 mainDiv.setAttribute("class", "main-div");
@@ -63,6 +68,9 @@ const translateDiv = document.createElement("div");
 translateDiv.textContent = "Traducción";
 translateDiv.setAttribute("class", "translate-div");
 
+const thirdDiv = document.createElement("div");
+thirdDiv.setAttribute("class", "third-div");
+
 const copy = document.createElement("div");
 copy.innerHTML = `<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-copy"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg>`;
 
@@ -76,11 +84,13 @@ mainContainer.appendChild(languageContainer);
 languageContainer.appendChild(originalLanguage);
 languageContainer.appendChild(arrows);
 languageContainer.appendChild(translatedLanguage);
+mainContainer.appendChild(secondBorder);
 mainContainer.appendChild(mainDiv);
 mainDiv.appendChild(firstDiv);
 firstDiv.appendChild(textarea);
 firstDiv.appendChild(micro);
 mainDiv.appendChild(secondDiv);
 secondDiv.appendChild(translateDiv);
-secondDiv.appendChild(copy);
-secondDiv.appendChild(volume);
+secondDiv.appendChild(thirdDiv);
+thirdDiv.appendChild(copy);
+thirdDiv.appendChild(volume);
