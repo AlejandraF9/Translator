@@ -54,9 +54,9 @@ html, body {
 
 .traductor {
     color: #6a6c71;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 22px;
+    font-family: "Nata-Sans";
+    font-weight: bold;
+    font-size: 20px;
     margin: 0.2rem;
 }
 
@@ -85,10 +85,17 @@ html, body {
     border: 3px solid #4285f4;
 }
 
-.arrows {
+.icon-tabler-mobiledata {
     color: #5f6368;
-    margin-right: 1rem;
+    padding: 0.5rem;
     transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.icon-tabler-mobiledata:hover {
+    border-radius: 50%;
+    padding: 0.5rem;
+    background-color: #eef0f4;
 }
 
 .second-border {
@@ -98,44 +105,87 @@ html, body {
 
 .main-div {
     display: flex;
-    margin-top: 2rem;
-    gap: 26rem;
-    height: 30%;
-    font-family: "Roboto";
-    color: #5f6368;
-    font-size: 18px;
+    position: relative;
+    height: 250px;
+    border-bottom: 1px solid #dadce0;
 }
 
 .first-div {
     display: flex;
     flex-direction: column;
-    width: 200%;
     justify-content: space-between;
-    padding-left: 25px;
+    flex: 1;
+    font-family: "Nata-Sans";
+    padding: 1.5rem;
+    background-color: white;
+    border-right: 1px solid #dadce0;
 }
 
 .textarea {
-    width: 200%;
+    flex: 1;
+    width: 100%;
+    font-family: "Nata-Sans";
+    font-size: 18px;
+    font-weight: bold;
     border: none;
     outline: none;
     resize: none;
 }
 
 .textarea::placeholder {
-    font-family: "Roboto";
+    font-family: "Nata-Sans";
+    font-weight: bold;
     color: #5f6368;
     font-size: 18px;
+}
+
+.third-border {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 190px;
+  height: 1px;
+  background-color: #dadce0;
+}
+
+.icon:hover {
+    border-radius: 50%;
+    padding: 0.5rem;
+    background-color: #eef0f4;
+}
+
+.icon-tabler-microphone, .icon-tabler-copy, .icon-tabler-volume {
+    color: #5f6368;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.first-div > div:last-child {
+    align-self: flex-start;
+    margin-top: auto;
+    margin-bottom: -1.1rem;
 }
 
 .second-div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    flex: 1;
+    padding: 1rem;
     background-color: #f8f9fa;
+    padding: 1.6rem;
+    font-family: "Nata-Sans";
+    font-size: 18px;
+    font-weight: bold;
+    color: #5f6368;
 }
 
 .third-div {
     display: flex;
-    gap: 28rem;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.third-div > div {
+    margin-bottom: -1.3rem;
 }

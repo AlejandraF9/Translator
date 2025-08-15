@@ -32,9 +32,7 @@ addOptions(originalLanguage, [
 ]);
 
 const arrows = document.createElement("div");
-arrows.innerHTML = `<svg  xmlns="http://www.w3.org/2000/svg"  width="28"  height="28"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mobiledata"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 12v-8" /><path d="M8 20v-8" /><path d="M13 7l3 -3l3 3" /><path d="M5 17l3 3l3 -3" /></svg>`;
-
-arrows.setAttribute("class", "arrows");
+arrows.innerHTML = `<svg  xmlns="http://www.w3.org/2000/svg"  width="28"  height="28"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon-tabler icons-tabler-outline icon-tabler-mobiledata"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 12v-8" /><path d="M8 20v-8" /><path d="M13 7l3 -3l3 3" /><path d="M5 17l3 3l3 -3" /></svg>`;
 
 const translatedLanguage = document.createElement("select");
 translatedLanguage.textContent = "Inglés";
@@ -57,6 +55,9 @@ firstDiv.setAttribute("class", "first-div");
 const textarea = document.createElement("textarea");
 textarea.placeholder = "Introduce el texto";
 textarea.setAttribute("class", "textarea");
+
+const thirdBorder = document.createElement("div");
+thirdBorder.setAttribute("class", "third-border");
 
 const micro = document.createElement("div");
 micro.innerHTML = `<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-microphone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 2m0 3a3 3 0 0 1 3 -3h0a3 3 0 0 1 3 3v5a3 3 0 0 1 -3 3h0a3 3 0 0 1 -3 -3z" /><path d="M5 10a7 7 0 0 0 14 0" /><path d="M8 21l8 0" /><path d="M12 17l0 4" /></svg>`;
@@ -88,6 +89,7 @@ mainContainer.appendChild(secondBorder);
 mainContainer.appendChild(mainDiv);
 mainDiv.appendChild(firstDiv);
 firstDiv.appendChild(textarea);
+mainDiv.appendChild(thirdBorder);
 firstDiv.appendChild(micro);
 mainDiv.appendChild(secondDiv);
 secondDiv.appendChild(translateDiv);
