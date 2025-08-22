@@ -4,7 +4,7 @@ html, body {
 }
 
 #app {
-    background-color: #f8f9fa;
+    background-color: var(--color-background-main);
     min-height: 100vh;
 }
 
@@ -18,17 +18,17 @@ html, body {
 .title {
     display: flex;
     gap: 1px;
-    margin: 1rem;
-    padding-left: 0.5rem;
+    margin: var(--spacing-card);
+    padding-left: var(--spacing-small);
 }
 
 .google {
-    font-family: "Poppins";
-    font-size: 20px;
+    font-family: var(--font-secondary);
+    font-size: var(--font-secondary-size);
 }
 
 .first-character {
-    color: #4285f4;
+    color: var(--color-main-blue);
     font-size: 22px;
 }
 
@@ -41,7 +41,7 @@ html, body {
 }
 
 .fourth-character {
-    color: #4285f4;
+    color: var(--color-main-blue);
 }
 
 .fifth-character {
@@ -54,21 +54,21 @@ html, body {
 
 .traductor {
     color: #6a6c71;
-    font-family: "Nata-Sans";
+    font-family: var(--font-primary);
     font-weight: bold;
-    font-size: 20px;
+    font-size: var(--font-secondary-size);
     margin: 0.2rem;
 }
 
 .first-border {
-    border-bottom: 1px solid #e8eaed;
+    border-bottom: 1px solid var(--color-border-light);
     margin-bottom: 1.5rem;
 }
 
 .language-container {
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
+    gap: var(--spacing-small);
 }
 
 .original-language, .translated-language {
@@ -76,13 +76,13 @@ html, body {
     color: #3d4144;
     font-size: 15px;
     padding: 0.7rem;
-    border-radius: 0.5rem;
-    border-color: #dadce0;
+    border-radius: var(--spacing-small);
+    border-color: var(--color-border);
 }
 
 .original-language:focus, .translated-language:focus {
     outline: none;
-    border: 3px solid #4285f4;
+    border: 3px solid var(--color-main-blue);
 }
 
 .arrows {
@@ -92,7 +92,7 @@ html, body {
 }
 
 .icon-tabler-mobiledata {
-    color: #5f6368;
+    color: var(--color-svg-primary);
     padding: 0.3rem;
     transform: rotate(90deg);
     cursor: pointer;
@@ -101,11 +101,11 @@ html, body {
 .icon-tabler-mobiledata:hover {
     border-radius: 50%;
     padding: 0.3rem;
-    background-color: #eef0f4;
+    background-color: var(--color-hover-icon);
 }
 
 .second-border {
-    border-bottom: 1px solid #e8eaed;
+    border-bottom: 1px solid var(--color-border-light);
     margin-top: 1.5rem;
 }
 
@@ -113,7 +113,7 @@ html, body {
     display: flex;
     position: relative;
     height: 250px;
-    border-bottom: 1px solid #dadce0;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .first-div {
@@ -121,17 +121,17 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
-    font-family: "Nata-Sans";
+    font-family: var(--font-primary);
     padding: 1.5rem;
     background-color: white;
-    border-right: 1px solid #dadce0;
+    border-right: 1px solid var(--color-border);
 }
 
 .textarea {
     flex: 1;
     width: 100%;
-    font-family: "Nata-Sans";
-    font-size: 18px;
+    font-family: var(--font-primary);
+    font-size: var(--font-main-size);
     font-weight: bold;
     border: none;
     outline: none;
@@ -139,10 +139,10 @@ html, body {
 }
 
 .textarea::placeholder {
-    font-family: "Nata-Sans";
+    font-family: var(--font-primary);
     font-weight: bold;
-    color: #5f6368;
-    font-size: 18px;
+    color: var(--color-svg-primary);
+    font-size: var(--font-main-size);
 }
 
 .third-border {
@@ -151,19 +151,19 @@ html, body {
   right: 0;
   top: 190px;
   height: 1px;
-  background-color: #dadce0;
+  background-color: var(--color-border-light);
 }
 
 .icon:hover {
     border-radius: 50%;
-    padding: 0.5rem;
-    background-color: #eef0f4;
+    padding: var(--spacing-small);
+    background-color: var(--color-hover-icon);
 }
 
 .icon-tabler-microphone, .icon-tabler-copy, .icon-tabler-volume {
-    color: #5f6368;
+    color: var(--color-svg-primary);
     cursor: pointer;
-    padding: 0.5rem;
+    padding: var(--spacing-small);
 }
 
 .first-div > div:last-child {
@@ -177,18 +177,18 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
-    padding: 1rem;
-    background-color: #f8f9fa;
+    padding: var(--spacing-card);
+    background-color: var(--color-background-main);
     padding: 1.6rem;
-    font-family: "Nata-Sans";
-    font-size: 18px;
+    font-family: var(--font-primary);
+    font-size: var(--font-main-size);
     font-weight: bold;
-    color: #5f6368;
+    color: var(--color-svg-primary);
 }
 
 .third-div {
     display: flex;
-    gap: 0.5rem;
+    gap: var(--spacing-small);
     justify-content: space-between;
 }
 

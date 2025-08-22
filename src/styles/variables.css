@@ -1,0 +1,16 @@
+:root {
+    --color-background-main: #f8f9fa;
+    --color-border: #dadce0;
+    --color-border-light: #e8eaed;
+    --color-svg-primary: #5f6368;
+    --color-hover-icon: #eef0f4;
+    --color-main-blue: #4285f4;
+
+    --font-primary: "Nata-Sans", sans-serif;
+    --font-secondary: "Poppins", sans-serif;
+    --font-main-size: 18px;
+    --font-secondary-size: 20px;
+
+    --spacing-card: 1rem;
+    --spacing-small: 0.5rem;
+}
